@@ -1,6 +1,79 @@
 .grow:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
+
+.container#header{
+  height: 100vh;
+}
+
+
+
+body {
+  background-image:url("../img/gold.png");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Fjord One', serif;
+
+}
+
+section.blur_dark {
+  border-radius: 35px;
+  padding: 50px 35px;
+  margin: 35px auto;
+  text-decoration: none;
+  background: inherit;
+  overflow: hidden;
+}
+section.blur_dark::before{
+  visibility: visible;
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: blur(10px) saturate(110%);
+  -moz-filter: blur(10px) saturate(110%);
+  filter: blur(10px) saturate(110%);
+  }
+
+section.blur_light {
+  border-radius: 20vh;
+  margin: auto;
+  background: inherit;
+
+  width: max-content;
+  height: fit-content;
+}
+section.blur_light::before {
+  visibility: visible;
+  content: '';
+  margin: inherit;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  filter: blur(5px);
+}
+
+
+hr {
+  border: 0px none;
+  background-color: #000000;
+  height: 1px;
+}
+
+a:link,a:hover,a:visited{
+  color: #000000;
+}
+
 

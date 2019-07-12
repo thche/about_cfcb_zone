@@ -28,3 +28,6 @@ $(document).ready(function(){
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp(0);
     });
 });
+
+$(".blur3310").draggable();
+$(".blur6605").draggable();
